@@ -1,0 +1,11 @@
+.hdr {
+    border-bottom: solid 1px #79ff55;
+    width: 100%;
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+}
+
+.hdr__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

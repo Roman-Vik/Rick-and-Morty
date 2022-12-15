@@ -1,0 +1,57 @@
+
+.search__wrapper {
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+    padding: 20px 0 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    text-align: center;
+    padding: 6px 0 6px 0;
+    background: rgba(0, 0, 0, .0);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgb(225, 27, 27);
+    border-bottom: 2px solid rgb(121, 255, 85);
+    border-top: 2px solid rgb(121, 255, 85);
+    outline: none;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 30px;
+}
+
+input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(16, 239, 239, 0.7);
+    font-family: 'Nerko One', sans-serif;
+    font-size: 30px;
+}
+
+.search__selector {
+    border: none;
+    text-align: center;
+    padding: 6px 0 6px 0;
+    background: rgba(0, 0, 0, .0);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgb(225, 27, 27);
+    border-bottom: 2px solid rgb(121, 255, 85);
+    border-top: 2px solid rgb(121, 255, 85);
+    outline: none;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+}
+
+option:nth-child(odd) {
+    background: rgb(38, 3, 61)
+}
+
+option:nth-child(even) {
+    background: rgb(38, 3, 61)
+}

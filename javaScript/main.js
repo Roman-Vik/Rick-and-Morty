@@ -2,12 +2,9 @@ import {card} from "./module/card.js";
 import {search} from "./module/search.js";
 import {data} from "./module/data.js";
 
-
-export let list  =  await data()
-
+export let list = await data()
 export const cards = document.querySelector('.cards')
 
-/*========цикл========*/
 list.forEach(el => {
     let person = {
         name: el.name,
@@ -18,25 +15,20 @@ list.forEach(el => {
     }
     cards.append(card(person))
 })
-
+export const searchSelect = document.querySelector('.search__selector')
 export const input = document.querySelector('.search__name')
 
-
-/*3 слова*/
 const listStatus = list.map(el => el.status)
 const unicListStatus = [...new Set(listStatus)]
-/*-------Узел добавдения options------*/
-export const searchSelect = document.querySelector('.search__selector')
 
-/*Добавил options*/
-unicListStatus.forEach((el,i) => {
+unicListStatus.forEach((el, i) => {
     let option = document.createElement('option')
     option.textContent = el
     searchSelect.append(option)
 })
 
 searchSelect.addEventListener('click', search)
-input.addEventListener('input', search )
+input.addEventListener('input', search)
 
 
 
