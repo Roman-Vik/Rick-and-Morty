@@ -1,13 +1,8 @@
 import {card} from "./module/card.js";
 import {search} from "./module/search.js";
+import {data} from "./module/data.js";
 
 
-async function data() {
-    const URL = 'https://rickandmortyapi.com/api/character'
-    let promise = await fetch(URL)
-    let d = await promise.json()
-    return d.results
-}
 export let list  =  await data()
 
 export const cards = document.querySelector('.cards')
