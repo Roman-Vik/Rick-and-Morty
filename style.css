@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hdr {
+    border-bottom: solid 1px #79ff55;
+    width: 100%;
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+}
+
+.hdr__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.search__wrapper {
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+    padding: 20px 0 200px 0;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    text-align: center;
+    padding: 6px 0 6px 0;
+    background: rgba(0, 0, 0, .0);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgb(225, 27, 27);
+    border-bottom: 2px solid rgb(121, 255, 85);
+    border-top: 2px solid rgb(121, 255, 85);
+    outline: none;
+    font-family: 'Nerko One';
+    font-size: 30px;
+}
+
+input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(16, 239, 239, 0.7);
+    font-family: 'Nerko One';
+    font-size: 30px;
+
+}
+
+.search__selector {
+    border: none;
+    text-align: center;
+    padding: 6px 0 6px 0;
+    background: rgba(0, 0, 0, .0);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgb(225, 27, 27);
+    border-bottom: 2px solid rgb(121, 255, 85);
+    border-top: 2px solid rgb(121, 255, 85);
+    outline: none;
+    font-family: 'Nerko One';
+    font-size: 20px;
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+
+}
+
+
+option:nth-child(odd) {
+    background: rgb(38, 3, 61)
+}
+option:nth-child(even) {
+    background: rgb(38, 3, 61)
+}
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+    padding: 40px 20px 40px 20px;
+}
+
+.cards {
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+    padding: 20px;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.3fr));
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.cards__item {
+    background: linear-gradient(rgb(33, 5, 42), #1C0026);
+    padding: 10px 15px 10px 15px;
+    box-shadow: 2px 0 8px 2px rgba(74, 222, 24, 1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+
+}
+
+
+.cards__item:hover {
+    box-shadow: 2px 0 8px 2px rgba(16, 239, 239, 0.7);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cards__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.cards__textWrapper > p, h4 {
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.cards__name {
+    color: rgb(39, 170, 68);
+    font-size: 22px;
+    font-family: 'Nerko One';
+}
+
+.cards__species {
+    font-size: 24px;
+    font-family: 'Gloria Hallelujah';
+    color: rgb(249, 221, 100);
+}
+
+.cards__status {
+    font-size: 24px;
+    font-family: 'Julee';
+    color: rgba(189, 19, 19, 0.75);
+}
+
+.cards__gender {
+    font-size: 24px;
+    font-family: 'Gloria Hallelujah';
+    color: rgb(43, 118, 130);
+}
+
